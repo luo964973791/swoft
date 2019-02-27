@@ -7,7 +7,7 @@ version: '3'
 
 services:
     swoft:
-       image: swoft/swoft:latest
+    image: swoft/swoft:latest
        container_name: swoft
        ports:
          - "666:80"
