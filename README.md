@@ -4,7 +4,6 @@ git clone https://github.com/swoft-cloud/swoft
 cd swoft  
 # 修改docker-composer.yml 最后一行  
     version: '3'
-
     services:
         swoft:
         image: swoft/swoft:latest
@@ -22,10 +21,8 @@ docker exec -it swoft /bin/bash
 
 # 安装中国源  
 composer config -g repo.packagist composer https://packagist.phpcomposer.com && composer install  
-
 # 继续修改docker-composer.yml  
     version: '3'
-
     services:
         swoft:
            image: swoft/swoft:latest
@@ -40,4 +37,4 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com && 
            entrypoint: ["php", "/var/www/swoft/bin/swoft", "start"]  
 
 #重启  
-docker-compose up --build -d  
+docker-compose up --build -d
